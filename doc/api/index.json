@@ -1,0 +1,99 @@
+{
+  "resources": [
+    {
+      "name": "Session",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Login",
+          "link": "session/login.json",
+          "groups": "all",
+          "route": "/sessions/sign_in",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Task",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create a Task",
+          "link": "task/create_a_task.json",
+          "groups": "all",
+          "route": "todos/:todo_id/tasks",
+          "method": "post"
+        },
+        {
+          "description": "Delete Task",
+          "link": "task/delete_task.json",
+          "groups": "all",
+          "route": "/todos/:todo_id/tasks/:id",
+          "method": "delete"
+        },
+        {
+          "description": "List tasks",
+          "link": "task/list_tasks.json",
+          "groups": "all",
+          "route": "todos/:todo_id/tasks",
+          "method": "get"
+        },
+        {
+          "description": "Show Task",
+          "link": "task/show_task.json",
+          "groups": "all",
+          "route": "/todos/:todo_id/tasks/:id",
+          "method": "get"
+        },
+        {
+          "description": "Update a Task",
+          "link": "task/update_a_task.json",
+          "groups": "all",
+          "route": "todos/:todo_id/tasks/:id",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Todo",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create a Todo",
+          "link": "todo/create_a_todo.json",
+          "groups": "all",
+          "route": "/todos",
+          "method": "post"
+        },
+        {
+          "description": "Delete Todo",
+          "link": "todo/delete_todo.json",
+          "groups": "all",
+          "route": "/todos/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Todo Tasks",
+          "link": "todo/todo_tasks.json",
+          "groups": "all",
+          "route": "/todos/:id/list_tasks",
+          "method": "get"
+        },
+        {
+          "description": "Todos for a paritcular user",
+          "link": "todo/todos_for_a_paritcular_user.json",
+          "groups": "all",
+          "route": "/todos",
+          "method": "get"
+        },
+        {
+          "description": "Update a Todo",
+          "link": "todo/update_a_todo.json",
+          "groups": "all",
+          "route": "/todos/:id",
+          "method": "put"
+        }
+      ]
+    }
+  ]
+}

@@ -28,7 +28,8 @@ class V1::BaseController < ApplicationController
 
   def authenticate!
 		(token_invalid and return) unless current_user&.authorize_token?(auth_token)
-  rescue NameError
+  	
+	rescue NameError
     token_invalid and return
   end
 

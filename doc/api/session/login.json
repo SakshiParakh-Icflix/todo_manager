@@ -1,0 +1,61 @@
+{
+  "resource": "Session",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/sessions/sign_in",
+  "description": "Login",
+  "explanation": null,
+  "parameters": [
+    {
+      "scope": "session",
+      "required": true,
+      "name": "login",
+      "description": "User Email"
+    },
+    {
+      "scope": "session",
+      "required": true,
+      "name": "password",
+      "description": "User Password"
+    },
+    {
+      "scope": "session",
+      "required": true,
+      "name": "device_id",
+      "description": "Your device's ID"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/sessions/sign_in",
+      "request_body": "{\"session\":{\"login\":\"sakshi2894@gmail.com\",\"password\":\"Test_123\",\"device_id\":\"1234567\"}}",
+      "request_headers": {
+        "Accept": "application/version=1+json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"message\": \"Signed In Successfully\",\n  \"data\": {\n    \"id\": 1,\n    \"name\": \"Sakshi Parakh\",\n    \"email\": \"sakshi2894@gmail.com\",\n    \"device_id\": \"1234567\",\n    \"sign_in_count\": 1,\n    \"auth_token\": \"yN9zIjzcz5oAOUFt_ozcTDrUSCWrYvO6\",\n    \"api_key\": \"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMSIsImRldmljZV9pZCI6IjEyMzQ1NjcifQ.dSpdQqypjchjyCgj6JJc07lUitPLgIaA-3EXysYiUCM\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"8e47f9c8f7d8cec5d5c67e7bf92f459e\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "3c9af863-4a5c-4175-9224-87184adcba6e",
+        "X-Runtime": "0.067324",
+        "Vary": "Origin",
+        "Content-Length": "322"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/sessions/sign_in\" -d '{\"session\":{\"login\":\"sakshi2894@gmail.com\",\"password\":\"Test_123\",\"device_id\":\"1234567\"}}' -X POST \\\n\t-H \"Accept: application/version=1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

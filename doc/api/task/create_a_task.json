@@ -1,0 +1,66 @@
+{
+  "resource": "Task",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "todos/:todo_id/tasks",
+  "description": "Create a Task",
+  "explanation": "Create a task or item in a todo folder",
+  "parameters": [
+    {
+      "scope": "task",
+      "required": true,
+      "name": "name",
+      "description": "Name of the item or task"
+    },
+    {
+      "scope": "task",
+      "name": "done",
+      "description": "Status of the task"
+    },
+    {
+      "scope": "task",
+      "name": "target_date",
+      "description": "Target date of completion of the task"
+    },
+    {
+      "scope": "task",
+      "name": "completion_date",
+      "description": "Actual date of completion of the task"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "todos/3/tasks",
+      "request_body": "{\"task\":{\"name\":\"Buy Apples\",\"done\":false}}",
+      "request_headers": {
+        "Accept": "application/version=1+json",
+        "Content-Type": "application/json",
+        "X-Api-Key": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMyIsImRldmljZV9pZCI6IjE5NTYwOCJ9.yoiPPBtrWYELRVrz-YAcmUfBoWW5BuP-muTSda6u-QQ",
+        "Authorization": "j6aektLShgHlILPasTwkwoZgV6scBoX-",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"message\": \"A new task was successfully created\",\n  \"task\": {\n    \"id\": 2,\n    \"name\": \"Buy Apples\",\n    \"done\": false,\n    \"target_date\": null,\n    \"completion_date\": null,\n    \"todo_id\": 3,\n    \"created_at\": \"2018-04-17T01:59:22.932Z\",\n    \"updated_at\": \"2018-04-17T01:59:22.932Z\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"31bd67ad9377a7d1bffd7dd90fce1655\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "138e8371-7748-4d42-b4de-5433c4c688e1",
+        "X-Runtime": "0.012741",
+        "Vary": "Origin",
+        "Content-Length": "232"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000todos/3/tasks\" -d '{\"task\":{\"name\":\"Buy Apples\",\"done\":false}}' -X POST \\\n\t-H \"Accept: application/version=1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"X-Api-Key: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMyIsImRldmljZV9pZCI6IjE5NTYwOCJ9.yoiPPBtrWYELRVrz-YAcmUfBoWW5BuP-muTSda6u-QQ\" \\\n\t-H \"Authorization: j6aektLShgHlILPasTwkwoZgV6scBoX-\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

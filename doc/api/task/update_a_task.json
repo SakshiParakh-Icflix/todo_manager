@@ -1,0 +1,76 @@
+{
+  "resource": "Task",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "todos/:todo_id/tasks/:id",
+  "description": "Update a Task",
+  "explanation": "update a particular task or item",
+  "parameters": [
+    {
+      "scope": "task",
+      "required": true,
+      "name": "name",
+      "description": "Name of the item or task"
+    },
+    {
+      "scope": "task",
+      "name": "done",
+      "description": "Status of the task"
+    },
+    {
+      "scope": "task",
+      "name": "target_date",
+      "description": "Target date of completion of the task"
+    },
+    {
+      "scope": "task",
+      "name": "completion_date",
+      "description": "Actual date of completion of the task"
+    },
+    {
+      "required": true,
+      "name": "todo_id",
+      "description": "Todo ID"
+    },
+    {
+      "required": true,
+      "name": "id",
+      "description": "Task ID"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "todos/4/tasks/3",
+      "request_body": "{\"task\":{\"name\":\"Buy Oranges\",\"done\":true}}",
+      "request_headers": {
+        "Accept": "application/version=1+json",
+        "Content-Type": "application/json",
+        "X-Api-Key": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNCIsImRldmljZV9pZCI6IjgyNDkzMSJ9.yZNC2_9Onim8UIOOJ44PTiBjFs2fe-zco-3LyP53H-o",
+        "Authorization": "iOIpqqHC4xGpNVf_vvmTBjSat4mIiv3m",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"message\": \"Task updated successfully\",\n  \"task\": {\n    \"id\": 3,\n    \"name\": \"Buy Oranges\",\n    \"done\": true,\n    \"todo_id\": 4,\n    \"target_date\": \"2018-04-16T18:28:50.000Z\",\n    \"completion_date\": \"2018-04-16T18:28:50.000Z\",\n    \"created_at\": \"2018-04-17T01:59:22.979Z\",\n    \"updated_at\": \"2018-04-17T01:59:23.000Z\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"c2bfd9590f48ec01052ada6af1eed1f6\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "27072367-e7f3-43d7-9764-1776228f545a",
+        "X-Runtime": "0.020640",
+        "Vary": "Origin",
+        "Content-Length": "266"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000todos/4/tasks/3\" -d '{\"task\":{\"name\":\"Buy Oranges\",\"done\":true}}' -X PUT \\\n\t-H \"Accept: application/version=1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"X-Api-Key: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNCIsImRldmljZV9pZCI6IjgyNDkzMSJ9.yZNC2_9Onim8UIOOJ44PTiBjFs2fe-zco-3LyP53H-o\" \\\n\t-H \"Authorization: iOIpqqHC4xGpNVf_vvmTBjSat4mIiv3m\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

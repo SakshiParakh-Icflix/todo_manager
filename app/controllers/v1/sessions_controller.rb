@@ -4,9 +4,9 @@ class V1::SessionsController < V1::BaseController
 	
 	def create
     head :bad_request and return false if !params[:session].present? || !params[:session][:device_id].present?
-
-    load_user
-    render json: { message: "User Not Found" }, status: :unauthorized and return unless @user
+    
+		load_user
+		render json: { message: "User Not Found" }, status: :unauthorized and return unless @user
 	
 		if @user.authenticate(params[:session][:password])
 			update_user_and_device_fields

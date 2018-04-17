@@ -1,0 +1,50 @@
+{
+  "resource": "Todo",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "/todos/:id",
+  "description": "Delete Todo",
+  "explanation": "delete todo and all its tasks",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "Todo ID"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/todos/13",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/version=1+json",
+        "Content-Type": "application/json",
+        "X-Api-Key": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTEiLCJkZXZpY2VfaWQiOiI4MDU1NzEifQ.z8Yghtpf65pviMxpSUL2UhxAZKBv05ysUPrTbweFIKY",
+        "Authorization": "Pta8PEwGUjbkFrc3edCjSsa-Td_G3bME",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"message\": \"Todo deleted successfully\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"3c4b9dc0898badb0d13e20984267f708\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "35b892fa-8a1b-409c-ad5b-db0ce3ee9f67",
+        "X-Runtime": "0.028191",
+        "Vary": "Origin",
+        "Content-Length": "39"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/todos/13\" -d '' -X DELETE \\\n\t-H \"Accept: application/version=1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"X-Api-Key: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTEiLCJkZXZpY2VfaWQiOiI4MDU1NzEifQ.z8Yghtpf65pviMxpSUL2UhxAZKBv05ysUPrTbweFIKY\" \\\n\t-H \"Authorization: Pta8PEwGUjbkFrc3edCjSsa-Td_G3bME\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

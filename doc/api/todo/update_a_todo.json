@@ -1,0 +1,56 @@
+{
+  "resource": "Todo",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/todos/:id",
+  "description": "Update a Todo",
+  "explanation": "update a particular todo",
+  "parameters": [
+    {
+      "scope": "todo",
+      "required": true,
+      "name": "title",
+      "description": "Title of the todo"
+    },
+    {
+      "required": true,
+      "name": "id",
+      "description": "Todo ID"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/todos/11",
+      "request_body": "{\"todo\":{\"title\":\"Paris Tour\"}}",
+      "request_headers": {
+        "Accept": "application/version=1+json",
+        "Content-Type": "application/json",
+        "X-Api-Key": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiOSIsImRldmljZV9pZCI6IjYwODY0NSJ9.VmOXHOrBa_5b1o7JxCpeWTqCmW1BvLjDAnIMYnm1PhM",
+        "Authorization": "c4kj3d9TStBo1j_MP8_S9Px0ZzaHua5D",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"message\": \"Todo updated successfully\",\n  \"todo\": {\n    \"id\": 11,\n    \"title\": \"Paris Tour\",\n    \"user_id\": 9,\n    \"created_at\": \"2018-04-17T01:59:23.236Z\",\n    \"updated_at\": \"2018-04-17T01:59:23.257Z\"\n  }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b70398e7acca1a1cdbcabdc836c7c6a2\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "2eb48216-8188-4614-847f-654cde3f0fff",
+        "X-Runtime": "0.022915",
+        "Vary": "Origin",
+        "Content-Length": "169"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://localhost:3000/todos/11\" -d '{\"todo\":{\"title\":\"Paris Tour\"}}' -X PUT \\\n\t-H \"Accept: application/version=1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"X-Api-Key: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiOSIsImRldmljZV9pZCI6IjYwODY0NSJ9.VmOXHOrBa_5b1o7JxCpeWTqCmW1BvLjDAnIMYnm1PhM\" \\\n\t-H \"Authorization: c4kj3d9TStBo1j_MP8_S9Px0ZzaHua5D\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

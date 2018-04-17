@@ -1,0 +1,50 @@
+{
+  "resource": "Todo",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/todos/:id/list_tasks",
+  "description": "Todo Tasks",
+  "explanation": "get all the items in a todo",
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "Todo ID"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/todos/12/list_tasks",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/version=1+json",
+        "Content-Type": "application/json",
+        "X-Api-Key": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTAiLCJkZXZpY2VfaWQiOiI5OTYxNDIifQ.XXVKNf50TEhaIha5QcYILZqITqEbAUeSTLAxUt-1oPs",
+        "Authorization": "w7HeKxGUUk_MqrAXYlKC5UMvD8od8t6U",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"tasks\": [\n    {\n      \"id\": 8,\n      \"name\": \"make reservations\",\n      \"done\": false,\n      \"target_date\": \"2018-04-18T00:00:00.000Z\",\n      \"completion_date\": null,\n      \"todo_id\": 12,\n      \"created_at\": \"2018-04-17T01:59:23.315Z\",\n      \"updated_at\": \"2018-04-17T01:59:23.315Z\"\n    },\n    {\n      \"id\": 7,\n      \"name\": \"book tickets\",\n      \"done\": false,\n      \"target_date\": \"2018-04-18T00:00:00.000Z\",\n      \"completion_date\": null,\n      \"todo_id\": 12,\n      \"created_at\": \"2018-04-17T01:59:23.310Z\",\n      \"updated_at\": \"2018-04-17T01:59:23.310Z\"\n    },\n    {\n      \"id\": 6,\n      \"name\": \"plan itinerary\",\n      \"done\": false,\n      \"target_date\": \"2018-04-18T00:00:00.000Z\",\n      \"completion_date\": null,\n      \"todo_id\": 12,\n      \"created_at\": \"2018-04-17T01:59:23.307Z\",\n      \"updated_at\": \"2018-04-17T01:59:23.307Z\"\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"5c4c5e78766ff4a30c626b7aa8003ecf\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "56ea1390-7bd6-445b-a042-1412fd1c1ffa",
+        "X-Runtime": "0.013185",
+        "Vary": "Origin",
+        "Content-Length": "621"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/todos/12/list_tasks\" -X GET \\\n\t-H \"Accept: application/version=1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"X-Api-Key: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMTAiLCJkZXZpY2VfaWQiOiI5OTYxNDIifQ.XXVKNf50TEhaIha5QcYILZqITqEbAUeSTLAxUt-1oPs\" \\\n\t-H \"Authorization: w7HeKxGUUk_MqrAXYlKC5UMvD8od8t6U\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

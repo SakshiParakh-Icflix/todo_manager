@@ -1,0 +1,46 @@
+{
+  "resource": "Todo",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/todos",
+  "description": "Todos for a paritcular user",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/todos",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/version=1+json",
+        "Content-Type": "application/json",
+        "X-Api-Key": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNyIsImRldmljZV9pZCI6IjI3MTA5MSJ9.nrl8pX4y9pEypa2cjMzqcJP54UI8pXOoBS8d38beUns",
+        "Authorization": "Zhlat9K8MHLeiSpBEx-JpDLahDJI4oUW",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"data\": [\n    {\n      \"id\": 9,\n      \"title\": \"Grocery Shopping\",\n      \"user_id\": 7,\n      \"created_at\": \"2018-04-17T01:59:23.147Z\",\n      \"updated_at\": \"2018-04-17T01:59:23.147Z\"\n    },\n    {\n      \"id\": 8,\n      \"title\": \"Amsterdam Tour\",\n      \"user_id\": 7,\n      \"created_at\": \"2018-04-17T01:59:23.144Z\",\n      \"updated_at\": \"2018-04-17T01:59:23.144Z\"\n    },\n    {\n      \"id\": 7,\n      \"title\": \"Paris Tour\",\n      \"user_id\": 7,\n      \"created_at\": \"2018-04-17T01:59:23.140Z\",\n      \"updated_at\": \"2018-04-17T01:59:23.140Z\"\n    }\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"62b7eec4979f3d2817967af69059c8f9\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "c8b23801-167e-45e0-8e31-1b7149c87382",
+        "X-Runtime": "0.017361",
+        "Vary": "Origin",
+        "Content-Length": "386"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000/todos\" -X GET \\\n\t-H \"Accept: application/version=1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"X-Api-Key: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNyIsImRldmljZV9pZCI6IjI3MTA5MSJ9.nrl8pX4y9pEypa2cjMzqcJP54UI8pXOoBS8d38beUns\" \\\n\t-H \"Authorization: Zhlat9K8MHLeiSpBEx-JpDLahDJI4oUW\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "resource": "Task",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "todos/:todo_id/tasks",
+  "description": "List tasks",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "todo_id",
+      "description": "Todo ID"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "todos/2/tasks",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/version=1+json",
+        "Content-Type": "application/json",
+        "X-Api-Key": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMiIsImRldmljZV9pZCI6IjM2OTI1MSJ9.vhekFkgzFKqsjdEPpXPSYOLsBuPElAeOybWbQicTjqE",
+        "Authorization": "W30l9wmS2b3W66r4PfUBD2OheFmw87Z1",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"data\": [\n\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"8fe32e407a1038ee38753b70e5374b3a\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "d402e2bd-6bcc-4cd9-9963-a7f4734e7e02",
+        "X-Runtime": "0.016320",
+        "Vary": "Origin",
+        "Content-Length": "11"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://localhost:3000todos/2/tasks\" -X GET \\\n\t-H \"Accept: application/version=1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"X-Api-Key: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiMiIsImRldmljZV9pZCI6IjM2OTI1MSJ9.vhekFkgzFKqsjdEPpXPSYOLsBuPElAeOybWbQicTjqE\" \\\n\t-H \"Authorization: W30l9wmS2b3W66r4PfUBD2OheFmw87Z1\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}
