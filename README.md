@@ -9,7 +9,8 @@ A basic rails 5 API application to create todos for a user
 * CRUD can be performed on both todos and their tasks
 
 ## Additional Features
-* JWT authentication
+* RESTful APIs
+* JWT authentication for Stateless integration
 * Allowing muliple devices for a particular user (a limit can be set later to as many devices required)
 * API Versioning
 * API Documentation with /api/docs
