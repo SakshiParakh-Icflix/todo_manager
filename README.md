@@ -1,25 +1,21 @@
-# README
+# Todo Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A basic rails 5 API application to create todos for a user
 
-Things you may want to cover:
+## Getting Started
+User can login and log out
+User can create many todo folders
+Each of those todo folders can have many tasks
+CRUD can be performed on both todos and their tasks
 
-* Ruby version
+## Additional Features
+JWT authentication
+Allowing muliple devices for a particular user (a limit can be set later to as many devices required)
+API Versioning
+API Documentation with /api/docs
+Rspec TDD approach followed
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# todo_manager
+## Prerequisites
+Run rake db seed and use the User credentials provided in the seed file to proceed with
+Use the API documentation to follow the flow
+ 
